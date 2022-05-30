@@ -1,0 +1,212 @@
+@charset "UTF-8";
+
+/* отчистим все отступы и границы */
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+/* меняет подсчет блока так чтобы нам было удобно верстать  */
+*,
+*:before,
+*:after {
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* Убираем линии обводки у некоторых браузеров. */
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+/* перечисляем html5 и добавляем им значение блок, что делает их блочными  */
+nav,
+footer,
+header,
+aside {
+   display: block;
+}
+
+/* Уравниваем поведение шрифтов в разных браузеров123  */
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+   font-family: 'Exo';
+}
+
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+/*
+Задаёт стиль кнопки для очистки текстового поля. Исходно эта кнопка не видна,
+она появляется в правой части поля только при вводе текста.
+Только IE */
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+/*Задаёт стиль внутренней части элемента
+Только FireFox*/
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+/* ............................................................ */
+
+
+
+//hidden = Отображается только область внутри элемента, остальное будет скрыто.
+.weapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+// ограничивающий контейнер. Техничиский класс, не является БЭМ блоком.  
+._container {
+   max-width: 1159px;
+   padding: 5px 15px;
+   margin: 0px auto;
+   box-sizing: content-box;
+   position: relative;
+}
+
+
+._ibg {
+   position: relative;
+}
+
+._ibg img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+}
+
+
+//fonts----------------------
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+//@fonts----------------------
+
+.main-block {
+   flex: 1 1 auto;
+   position: relative;
+
+   &_container {}
+
+   &__body {
+      position: relative;
+      z-index: 2;
+
+   }
+
+
+   &__title {
+      margin: 225px 0px 0px 0px;
+      font-size: 60px;
+      line-height: 125%;
+      font-weight: 100;
+      letter-spacing: 0.04em;
+      color: #282828;
+      text-align: center;
+      padding: 0px 30px;
+
+   }
+
+   &__button {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px 0;
+      justify-content: center;
+
+      &_orange {
+         border-radius: 3px;
+         display: flex;
+         min-height: 50px;
+         padding: 15px 50px;
+         justify-content: center;
+         align-items: center;
+         letter-spacing: 0.2px;
+         font-weight: 700;
+         text-align: center;
+         text-transform: uppercase;
+         line-height: 150%;
+         transition: all 0.3s ease 0s;
+         background: #ff6d6d;
+         color: #fff;
+
+
+      }
+   }
+
+   &__text {
+      font-size: 14px;
+      line-height: 535%;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: #282828;
+      text-align: center;
+
+   }
+
+   &__image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+   }
+}
