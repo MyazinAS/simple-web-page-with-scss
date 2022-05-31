@@ -135,13 +135,11 @@ h6 {
    object-fit: cover;
 }
 
-
 //fonts----------------------
 @import url(https://fonts.googleapis.com/css?family=Exo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 //@fonts----------------------
 
 .main-block {
-   flex: 1 1 auto;
    position: relative;
 
    &_container {}
@@ -151,7 +149,6 @@ h6 {
       z-index: 2;
 
    }
-
 
    &__title {
       margin: 225px 0px 0px 0px;
@@ -166,34 +163,24 @@ h6 {
    }
 
    &__button {
-      display: flex;
-      flex-wrap: wrap;
-      margin: 10px 0;
-      justify-content: center;
+      text-align: center;
 
       &_orange {
-         border-radius: 3px;
-         display: flex;
-         min-height: 50px;
-         padding: 15px 50px;
-         justify-content: center;
-         align-items: center;
-         letter-spacing: 0.2px;
-         font-weight: 700;
-         text-align: center;
-         text-transform: uppercase;
-         line-height: 150%;
-         transition: all 0.3s ease 0s;
          background: #ff6d6d;
-         color: #fff;
-
-
+         padding: 18px 53px 18px 50px;
+         font-size: 16px;
+         line-height: 75px;
+         font-weight: 400;
+         text-transform: uppercase;
+         letter-spacing: 0.2em;
+         color: #ffffff;
       }
 
       &_orange:hover {
          background: #ffffff;
-         padding: 30px;
+         padding: 20px 55px 22px 52px;
          color: rgb(194, 71, 71);
+         transition: all 0.2s ease 0s;
       }
    }
 
@@ -220,16 +207,12 @@ h6 {
 //--------------------------------------
 
 .new-design {
-
-   margin-bottom: 500px;
-
    &_container {}
 
    &__body {}
 
    &__smalltext {
-
-      margin: 138px 0px 0px 0px;
+      margin: 130px 0px 0px 0px;
       font-size: 16px;
       line-height: 50px;
       font-weight: 500;
@@ -244,9 +227,6 @@ h6 {
       letter-spacing: 0.04em;
       color: #282828;
       text-align: left;
-
-
-
    }
 
    &__dot {
@@ -262,11 +242,7 @@ h6 {
       letter-spacing: 0.04em;
       color: #282828;
       margin: 30px 535px 0px 0px;
-
-
    }
-
-
 }
 
 //---PC_PAD_PHONE-------------------------------
@@ -390,11 +366,8 @@ h6 {
 //---------------------------------
 
 .new-features {
-
-
+   margin-top: 33%;
    position: relative;
-
-
 
    &_container {}
 
@@ -424,15 +397,15 @@ h6 {
    }
 
    &__row {
-
-      margin: 90px 0px 184px 0px;
       display: flex;
+      margin: 90px 0px 184px 0px;
+
    }
 
    &__column {
 
       padding: 0px 20px;
-      flex: 0 0 33.333%;
+
    }
 
    &__image {
@@ -447,17 +420,13 @@ h6 {
 
 }
 
-
-
 .item-about {
 
 
 
    &__icon {
 
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      text-align: center;
       margin: 29px 0px 0px 0px;
    }
 

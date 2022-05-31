@@ -137,9 +137,6 @@ h6 {
 }
 
 .main-block {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
   position: relative;
 }
 
@@ -160,45 +157,26 @@ h6 {
 }
 
 .main-block__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 10px 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
 }
 
 .main-block__button_orange {
-  border-radius: 3px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 50px;
-  padding: 15px 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  letter-spacing: 0.2px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 150%;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
   background: #ff6d6d;
-  color: #fff;
+  padding: 18px 53px 18px 50px;
+  font-size: 16px;
+  line-height: 75px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
 }
 
 .main-block__button_orange:hover {
   background: #ffffff;
-  padding: 30px;
+  padding: 20px 55px 22px 52px;
   color: #c24747;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .main-block__text {
@@ -220,12 +198,8 @@ h6 {
      object-fit: cover;
 }
 
-.new-design {
-  margin-bottom: 500px;
-}
-
 .new-design__smalltext {
-  margin: 138px 0px 0px 0px;
+  margin: 130px 0px 0px 0px;
   font-size: 16px;
   line-height: 50px;
   font-weight: 500;
@@ -326,6 +300,7 @@ h6 {
 }
 
 .new-features {
+  margin-top: 33%;
   position: relative;
 }
 
@@ -355,17 +330,14 @@ h6 {
 }
 
 .new-features__row {
-  margin: 90px 0px 184px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 90px 0px 184px 0px;
 }
 
 .new-features__column {
   padding: 0px 20px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.333%;
-          flex: 0 0 33.333%;
 }
 
 .new-features__image {
@@ -379,15 +351,7 @@ h6 {
 }
 
 .item-about__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
   margin: 29px 0px 0px 0px;
 }
 
